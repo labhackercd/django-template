@@ -1,6 +1,6 @@
 ![python3-badge](https://img.shields.io/badge/python-django-green.svg) ![enter image description here](https://img.shields.io/badge/license-GPLv3-blue.svg)
 
-# wikilegis
+# {{ project_name }}
 > Collaborative editing of legislative texts.
 
 ## Installation

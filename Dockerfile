@@ -3,10 +3,10 @@ FROM labhackercd/alpine-python3-nodejs
 ENV BUILD_PACKAGES postgresql-dev postgresql-client gettext
 
 RUN apk add --update --no-cache $BUILD_PACKAGES
-RUN mkdir -p /var/labhacker/wikilegis
+RUN mkdir -p /var/labhacker/{{ project_name }}
 
-ADD . /var/labhacker/wikilegis
-WORKDIR /var/labhacker/wikilegis
+ADD . /var/labhacker/{{ project_name }}
+WORKDIR /var/labhacker/{{ project_name }}
 
 RUN pip install 'pipenv==8.1.2' psycopg2 gunicorn && \
     pipenv install --system && \
