@@ -1,7 +1,15 @@
-![python3-badge](https://img.shields.io/badge/python-django-green.svg) ![enter image description here](https://img.shields.io/badge/license-GPLv3-blue.svg)
+![python3-badge](https://img.shields.io/badge/python-django-green.svg) ![license-badge](https://img.shields.io/badge/license-GPLv3-blue.svg)
+
+# How to use this template
+
+```
+django-admin startproject projectname --template=https://github.com/labhackercd/django-template/archive/master.zip --extension py,yml,json,md --name Dockerfile
+```
+
+Don't forget to add `--extension` and `--name` parameters!
 
 # {{ project_name }}
-> Collaborative editing of legislative texts.
+> Description of {{ project_name }} project
 
 ## Installation
 First of all, you need to install [pipenv](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv) and [npm](https://www.npmjs.com/get-npm). After install these dependencies you can run the follow commands:
